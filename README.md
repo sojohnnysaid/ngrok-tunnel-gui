@@ -5,9 +5,8 @@ Welcome to the Ngrok Electron App, where we make tunneling through the internet 
 
 ## 📦 Features
 
-- **Simple GUI**: A user-friendly interface with a big red button to start or stop your tunnel. 🖱️🎨
-- **Real-time Status**: Get immediate feedback on your tunnel's status with our emoji indicators! 🟢🔴
-- **Auto-Update**: Keep your software fresh and functional with automatic updates. 🔄
+- **Simple GUI**: A user-friendly interface allowing you to start or stop the tunnel 
+- **Real-time Status**: Get immediate feedback on your tunnel's status with our emoji indicators! 🟢
 
 ## 🛠️ Installation
 
@@ -33,8 +32,8 @@ npm start
 ```
 
 ## 🎮 How to Use
-Enter your desired local port that you want to expose to the internet.
-Click 'Start' to initialize the ngrok tunnel.
+- Enter your auth token and static domain
+- Click 'Start' to initialize the ngrok tunnel.
 
 ## 🐍 Quick Local Python Server Setup
 For testing purposes, you can use the included Python server setup in the quick-local-python-server directory. Follow the instructions there to set up a quick local server running on port 8080 using Flask. This allows you to test the ngrok tunnel effectively.
