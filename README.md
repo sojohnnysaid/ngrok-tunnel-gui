@@ -20,9 +20,9 @@ Welcome to the Ngrok Electron App, where we make tunneling through the internet 
 Navigate to your project directory
 ```bash
 cd ngrok-electron-app
-Install dependencies
 ```
 
+Install dependencies
 ```bash
 npm install
 ```
