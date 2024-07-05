@@ -16,3 +16,8 @@ Install Flask
 ```bash
 pip install flask
 ```
+
+Finally run the server
+```bash
+python server.py
+```
