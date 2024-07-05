@@ -6,7 +6,6 @@ Welcome to the Ngrok Electron App, where we make tunneling through the internet 
 ## 📦 Features
 
 - **Simple GUI**: A user-friendly interface allowing you to start or stop the tunnel 
-- **Real-time Status**: Get immediate feedback on your tunnel's status with our emoji indicators! 🟢
 
 ## 🛠️ Installation
 
