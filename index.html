@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Public Internet Tunnel Service</title>
+  <link href="./node_modules/materialize-css/dist/css/materialize.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      width: 90%;
+      max-width: 600px;
+    }
+    #statusIndicator {
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    #statusIndicator svg {
+      height: 24px; /* Adjust based on your preference */
+      width: 24px;
+    }
+    .error-message {
+      color: red;
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h4 class="header">Public Internet Tunnel Service</h4>
+    <div class="input-field">
+      <input id="authToken" type="password" class="validate">
+      <label for="authToken">Ngrok Auth Token</label>
+    </div>
+    <div class="input-field">
+      <input id="domain" type="text" class="validate">
+      <label for="domain">Static ngrok Domain</label>
+    </div>
+    <div>
+      <button class="btn waves-effect waves-light" id="startStopBtn">Start</button>
+    </div>
+    <div id="errorMessage" class="error-message"></div>
+    <div id="ngrokInfoDiv" style="display: none; margin-top: 20px;">
+      <div class="ngrok-info">
+        <h5>Ngrok Information</h5>
+        <p>Status: <span id="ngrokStatus"></span><span id="statusIndicator"></span></p>
+        <p>Web Interface: <span id="ngrokWebInterface"></span></p>
+        <p>Forwarding URL: <span id="ngrokForwardingUrl"></span></p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>
+
